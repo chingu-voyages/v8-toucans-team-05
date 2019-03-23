@@ -1,0 +1,134 @@
+/*para que todo quede bien pegado a los bordes*/
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "helvetica", sans-serif;
+color:  #8e8e87;
+/*background-color: #F0F8FF;*/
+
+}
+
+body{
+  padding: 0%;
+  background-color: white;
+}
+/*para todo el header */
+/*div superior */
+#page-wrapper{
+  background-color: #F0F8FF;
+  padding-left: 0%;
+  padding-right: 0%;
+
+  }
+
+
+header{
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+}
+
+header nav ul li a{
+  color:#8e8e87;
+}
+
+#header-img{
+  width: 50%;
+  margin-left: 10%;
+}
+
+#iconos-font-awesome{
+  color:white;
+  font-size: 28px;
+}
+
+/*que la parte superior no tenga color ni decoracion*/
+  ul {
+
+    width: 655px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
+  }
+
+
+/*quitar el punto de una lista - bullet points -*/
+li {
+      list-style-type: none;
+      padding-top: 30px;
+
+}
+/*cuadrar que todos los dibujos queden al mismo nivel
+esto lo hago bajando todo al nivel del boton*/
+ #nav-header{
+  padding-top: 35px;
+}
+
+.nav-link {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2em;
+/*  margin-right:0; */
+}
+li #boton-header{
+  /*padding-top: -10px;*/
+  margin-bottom: 25px;
+}
+
+/*hasta aqui va el header*/
+
+
+/*cuerpo de la pagina*/
+.dec{
+padding-top: 5%;
+}
+
+.decoracion{
+  padding:5%;
+}
+/*termina cuerpo de la pagina*/
+
+
+
+/*comienza el footer*/
+footer{
+  background-color:#424242;
+
+}
+footer div{
+  color:white;
+}
+footer i {
+}
+
+footer p{
+  color:white;
+}
+
+#img-logo{
+  width: 200px;
+  background-color: white;
+}
+
+.separador{
+  color:white;
+  padding:10px;
+  margin-left:10%;
+  margin-right: 10%;
+}
+/*termina el footer*/
