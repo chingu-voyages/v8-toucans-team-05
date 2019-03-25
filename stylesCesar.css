@@ -1,0 +1,334 @@
+/*#############################################*/
+/*Cesar*/
+/*#############################################*/
+
+.grandgrid{
+  display: flex;
+  flex-direction: row;
+  flex: 0em 0em 25em;
+  margin-top: 10vw;
+  background-color: black;
+}
+
+.grandgridtitle{
+  height: auto;
+  width: auto;
+  color: white;
+  margin-top: 8vw;
+  text-align: center;
+}
+
+.grandgridtitle h2{
+  margin-left:  4rem;
+  margin-right: 4rem;
+  color: white;
+  font-size:3vw;
+}
+
+.grandgridtitle p{
+  margin-left:  4rem;
+  margin-right: 4rem;
+  color: white;
+  font-size:2vw;
+}
+
+
+#landingTitle{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  word-spacing: 0.2px;
+  color: #EEFFEE;
+  top: 60px;
+  bottom: 10px;
+  text-align: center;
+}
+
+#landingimg{
+  display: grid;
+  grid-template-columns: fit-content(40%) minmax(400px, 1fr);
+  grid-template-rows: 1fr 1fr;
+  text-align: justify;
+  background-image: url(img/landing.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/*#############################*/
+/*Health button and heart animation*/
+/*#############################*/
+
+.circleHealth{
+    height: 200px;
+    width: 200px;
+    background-color: #c40b13;
+    border-radius: 50%;
+    margin-right: 10vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.heart {
+ position: initial;
+  height: 100px;
+  width: 100px;
+  margin-top: 4rem;
+  margin-left: 5rem;
+  top: 40px;
+  bottom: 10px;
+
+  }
+
+.heart:hover{
+
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+}
+
+.heart:hover ~ .grandgrid {
+  background-color: green;
+  color: white;
+}
+
+.heart:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+  animation-iteration-count: infinite;
+}
+.heart:before {
+  background-color: pink;
+  content: "";
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+}
+
+#healthcaption{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  word-spacing: 0.2px;
+  color: #EEFFEE;
+  top: 5rem;
+  text-align: center;
+}
+
+/*#############################*/
+/*Banking button and animation*/
+/*#############################*/
+
+.circleBank{
+    height: 200px;
+    width: 200px;
+    background-color: #b0885f;
+    border-radius: 50%;
+    margin-left: 8vw;
+    margin-top: 1vw;
+}
+
+.bank {
+  height: 100px;
+  width: 100px;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  top: 20px;
+  bottom: 10px;
+  }
+
+.bank:hover{
+  animation-name: floating;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+
+
+#bankcaption{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  word-spacing: 0.2px;
+  color: #EEFFEE;
+  top: 5rem;
+  text-align: center;
+}
+
+
+/*#############################*/
+/*Retail button and animation*/
+/*#############################*/
+
+.circleRetail{
+    height: 200px;
+    width: 200px;
+    background-color: #ffb228;
+    border-radius: 50%;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.retail {
+  height: 100px;
+  width: 100px;
+  margin-top: 6rem;
+  margin-left: 5rem;
+  top: 50px;
+  bottom: 10px;
+  }
+
+.retail:hover{
+  animation-name: moving;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes moving {
+	0% {
+         transform:rotate(0deg);
+	}
+    50% {
+         transform:rotate(12deg);
+	}
+    75% {
+        transform:rotate(-8deg);
+	}
+    100% {
+        transform:rotate(0deg);
+	}
+}
+
+
+#retailcaption{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  word-spacing: 0.2px;
+  color: #EEFFEE;
+  top: 4rem;
+  text-align: center;
+}
+
+
+/*#############################*/
+/*Research button and animation*/
+/*#############################*/
+
+.circleResearch{
+    height: 200px;
+    width: 200px;
+    background-color: #e8ecd6;
+    border-radius: 50%;
+    margin-left: 8vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.research {
+  height: 100px;
+  width: 100px;
+  margin-top: 5.5rem;
+  margin-left: 4.5rem;
+  top: 50px;
+  bottom: 10px;
+  }
+
+.research:hover{
+  animation-name: computerre;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  }
+
+@keyframes computerre  {
+  0% {
+      opacity:0.9;
+  }
+  50% {
+      opacity:0.6;
+  }
+  100% {
+      opacity:0.9;
+  }
+}
+
+
+#researchcaption{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  word-spacing: 0.2px;
+  color: #EEFFEE;
+  top: 5rem;
+  text-align: center;
+}
+
+
+/*#############################*/
+/*Responsiveness*/
+/*#############################*/
+
+@media (min-width: 200px) and (max-width: 1024px) {
+
+  #landingimg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    background-image: url(img/landing.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 60rem;
+  }
+
+  .grandgrid{
+    display: flex;
+    flex-direction: column;
+    flex: 3 0 55vw;
+    margin-top: 40vw;
+    background-color: black;
+    height: 100rem;
+  }
+
+  h2{
+    color: red;
+  }
+}
