@@ -23,6 +23,7 @@ body, html {
 }
 
 .serv-items {
+
   margin-right: 2%;
   margin-bottom: 20px;
   padding: 30px 0 50px;
@@ -33,8 +34,12 @@ body, html {
    -moz-animation: fadein 2s; /* Firefox */
    -webkit-animation: fadein 2s; /* Safari and Chrome */
    -o-animation: fadein 2s; /* Opera */
+   flex: 1 1 32%;
+
 
 }
+
+
  /* Third card in row*/
 .serv-items-3 {
   margin-right: 0px;
@@ -201,4 +206,40 @@ body, html {
 .serv-item-footer a {
   color: #005eb8;
   text-decoration: none;
+}
+
+/*  media styles */
+/*.col-lg-4 {
+padding-left:6px;
+padding-right:6px;
+}
+
+.col-md-6 .serv-items {
+  max-width: 80%;
+  margin: 0 auto;
+}*/
+
+/* Media Queries*/ /*
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) {
+  .card {
+    height: 376px;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {
+  .card {
+    height: 425px;
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) {
+  .card {
+    height: 425px;
+  }
+
+
 }
