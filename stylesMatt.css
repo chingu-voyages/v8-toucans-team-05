@@ -151,6 +151,7 @@ body, html {
 .serv-items a:focus .hover-img, .serv-items a:hover .hover-img  {
   bottom: 0;
   height: 100%;
+  text-decoration: none;
 }
 
 /* Example code
@@ -163,12 +164,12 @@ body, html {
 
   /* Icon styles end */
 
-
-
-
-
 .serv-items a {
   cursor: pointer;
+  text-decoration: none;
+}
+
+.serv-items a:hover {
   text-decoration: none;
 }
 
