@@ -220,7 +220,7 @@ padding-right:6px;
   margin: 0 auto;
 }*/
 
-/* Media Queries*/ /*
+/* Media Queries /*
 
 /* Medium devices (tablets, 768px and up)*/
 @media only screen and (min-width: 768px) {
@@ -234,8 +234,14 @@ padding-right:6px;
   .card {
     height: 425px;
 
-}
+  }
 
+  .glider div img {
+    margin-right: 106px;
+    width:142px;
+    height: auto;
+  }
+}
 /* Extra large devices (large desktops, 1200px and up)*/
 @media only screen and (min-width: 1200px) {
   .card {
@@ -244,3 +250,63 @@ padding-right:6px;
 
 
 }
+
+/* START - Our track record SECTION */
+.record-section {
+  background-color: lavender; /*#fff*/
+  padding: 30px 0 56px;
+}
+
+.record-title {
+  background-color: lightyellow;
+  color: #115689;
+  font: 600 36px open sans, sans-serif;
+  line-height: 49px;
+  text-transform: none;
+  margin: 0 0 28px;
+}
+
+.rec-grid-2 {
+  background-color: lightblue;
+}
+
+.Badge-H2 {
+  background-color: lightyellow;
+}
+
+.record-carousel {
+  background-color: lightgreen;
+  width:85%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.glider div img {
+  margin-right: 106px;
+  width:142px;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: filter .5s;
+}
+
+.glider div img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%); !important;
+  cursor:pointer; !important;
+
+}
+
+.glider-next {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.glider-prev {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+/* END - Our track record SECTION */

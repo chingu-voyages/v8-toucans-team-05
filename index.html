@@ -6,6 +6,7 @@
     <title>Pagina del voyage</title>
     <link rel="stylesheet" href="stylesJuan.css">
     <link rel="stylesheet" href="stylesMatt.css">
+    <link rel="stylesheet" href="glider-styles-Matt.css">
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,6 +17,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Awesome fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <!--Google fonts Open Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
 
 <body>
@@ -219,6 +222,53 @@
   <!-- Grid column -->
 </section> <!--End of Service section-->
 
+<!--Start of Record section-->
+<section class="record-section">
+  <div class="row text-center mx-auto" style="max-width: 1160px;">
+
+  <!-- Grid column -->
+  <div class="col-lg-12 col-md-12  mb-lg-0 mb-4">
+    <h2 class="record-title text-center">Our track record</h2>
+  </div>
+
+    <!-- Grid column -->
+    <div class="rec-grid-2 col-lg-12 col-md-12  mb-lg-0 mb-4">
+      <h2 class="Badge-H2">  Badge Gallery</h2>
+      <div class="glider-contain multiple record-carousel "> <!--Start glider container-->
+        <div class="glider"> <!--Start glider-->
+          <div>
+            <img src="https://placeimg.com/142/109/tech" alt="Icon Img" class="image">
+          </div>
+          <div>
+            <img src="https://placeimg.com/142/109/animals" alt="Icon Img" class="image">
+          </div>
+          <div>
+            <img src="https://placeimg.com/142/109/arch" alt="Icon Img" class="image">
+          </div>
+          <div>
+            <img src="https://placeimg.com/142/109/nature" alt="Icon Img" class="image">
+          </div>
+          <div>
+            <img src="https://placeimg.com/142/109/people" alt="Icon Img" class="image">
+          </div>
+          <div>
+            <img src="https://placeimg.com/142/109/tech" alt="Icon Img" class="image">
+          </div>
+        </div>    <!--End glider-->
+
+        <button role="button" aria-label="Previous" class="glider-prev">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button role="button" aria-label="Next" class="glider-next">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        <div role="tablist" id="dots" class="glider-dots glider-dot"></div>
+      </div> <!--Start glider container-->
+
+    </div>
+  </div>
+</section>
+<!--End of Record section-->
 
 
 <!--</div>-->
@@ -299,6 +349,7 @@
 <!--Finaliza el ultimo div del footer-->
 </footer>
 
-
+    <script type="text/javascript" src="glider.js"></script>
+    <script type="text/javascript"  src="scriptMatt.js"></script>
   </body>
 </html>
