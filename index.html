@@ -6,56 +6,81 @@
     <title>Chingu's Voyage: Software Development Company</title>
     <link rel="stylesheet" href="stylesJuan.css">
     <link rel="stylesheet" href="stylesMatt.css">
-	<link rel="stylesheet" type="text/css" href="stylesCesar.css">
+    <link rel="stylesheet" type="text/css" href="stylesCesar.css">
+    <link rel="stylesheet" type="text/css" href="carrusel.css">
 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--Boostrap-->
+    <!--Boostrap 3-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <!--Bootstrap 4-->
+
+    <!--Bootrap 4-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Awesome fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/cesarScript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+
   </head>
 
 <body>
 
+    <!--div to hide the fact the nav bar do not adjust well horizontally-->
+  <!--  <div class="container">
+      <div class="row">
+        <div class="col" style="position:fixed;">
+
+        </div>
+      </div>
+    </div>-->
+
 
     <!--div para el header-->
-    <div id="page-wrapper">
-      <header id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-center">
+          <div class="col text-center" id="page-wrapper">
 
-    <div class="logo col-md-4">
-    <img src="http://reviewsappdeveloper.com/wp-content/uploads/2017/05/scnsoft.png" id="header-img" />
+          <header id="header">
+
+            <div class="logo col-md-4">
+            <img src="img/logo1.png" id="header-img" />
+            </div>
+
+            <div class="col-md-8">
+            <nav class="col-md-8" id="nav-bar">
+              <ul>
+                <li id="nav-header"><a class="nav-link" href="#" > About</a></li>
+                <li id="nav-header"><a class="nav-link" href="#"> Services </a> </li>
+                <li id="nav-header"><a class="nav-link" href="#"> Industries</a></li>
+                <li id="nav-header"><a class="nav-link" href="#"> Case Studies</a></li>
+                <li id="nav-header"><a class="nav-link" href="#"> Blog</a></li>
+                <li ><a class="nav-link btn btn-primary" href="#" id="boton-header"> Contact Us</a></li>
+                <li id="nav-header"><a class="nav-link" href="#"> English</a></li>
+                <li><button class="btn" id="boton-header"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+       <!--fin del header-->
+
+        </div>
+
+        </div>
+      </div>
     </div>
 
-    <nav class="col-md-8" id="nav-bar">
-      <ul>
-        <li id="nav-header"><a class="nav-link" href="#" > About</a></li>
-        <li id="nav-header"><a class="nav-link" href="#"> Services </a> </li>
-        <li id="nav-header"><a class="nav-link" href="#"> Industries</a></li>
-        <li id="nav-header"><a class="nav-link" href="#"> Case Studies</a></li>
-        <li id="nav-header"><a class="nav-link" href="#"> Blog</a></li>
-        <li ><a class="nav-link btn btn-primary" href="#" id="boton-header"> Contact Us</a></li>
-        <li id="nav-header"><a class="nav-link" href="#"> En</a></li>
-        <li><button class="btn" id="boton-header"><i class="fa fa-search" aria-hidden="true"></i>
-</button></li>
-      </ul>
-    </nav>
-
-  </header>
- <!--fin del header-->
-
-</div>
 <!--fin del div para el header-->
 
 <!-- ####################################################-->
 <!-- CESAR'S SERVICES PART -->
 <!-- ####################################################-->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="cesarScript.js"></script>
 
 
 <div class="grandgrid">
@@ -109,186 +134,397 @@
 </div>
 
 <!--Div maded by matt-->
-<!--<div class="Matt">-->
-<!-- new service container :) :) :)-->
-  <section class="serv-section">
-    <!-- Grid row 1-->
-<div class="row text-center mx-auto" style="max-width: 1160px;">
+<div class="Matt">
 
-  <!-- Grid column -->
-  <div class="grid-col col-lg-4 col-md-6  mb-lg-0 mb-4">
-    <!--Card 1-->
-    <div class="serv-items card col">
-  <a class="serv-items-a" href="https://www.scnsoft.com/services/custom-application-development">
-    <div class="icon-container  ">
-      <img src="https://svgshare.com/i/ByL.svg" alt="Icon Img" class="image">
-      <div class="hover-img hover-img-1"></div>
-    </div>
-    <h2 class="serv-item-title align-self-center">Custom Software Development</h2>
-  </a>
-  <div class="serv-item-content">
-    <p>We offer full-cycle development services for web, mobile and desktop that have already brought value to Walmart, eBay and Viber</p>
-  </div>
-
-  <div class="serv-item-footer">
-    <a href="#">See More</a>
-  </div>
+<section class="serv-section mx-auto">
+   <div class="serv-container container mx-auto">
+     <div class="row text-center justify-content-center mx-auto  ">
+       <div class="serv-items card col shadow-none col-md-4 ">
+         <a class= "serv-items-a" href="https://www.scnsoft.com/services/custom-application-development" >
+           <div class="icon-container  ">
+ <img src="https://svgshare.com/i/ByL.svg" alt="Icon Img" class="image">
+ <div class="hover-img hover-img-1"></div>
 </div>
 
+             <h2 class="serv-item-title align-self-center">Custom Software Development</h2>
 
-  </div>
-  <!-- Grid column -->
+         </a>
+         <div class="serv-item-content">
+           <p>We offer full-cycle development services for web, mobile and desktop that have already brought value to Walmart, eBay and Viber</p>
+         </div>
 
-  <!-- Grid column -->
-  <div class=" grid-col col-lg-4 col-md-6 mb-md-0 mb-4">
-    <!--Card 2-->
-    <div class="serv-items card col">
-          <a class= "serv-items-a" href="https://www.scnsoft.com/services/software-consulting" >
-            <div class="icon-container  ">
-  <img src="https://svgshare.com/i/Bwy.svg" alt="Icon Img" class="image">
-  <div class="hover-img hover-img-2"></div>
+         <div class="serv-item-footer">
+           <a href="#">See More</a>
+         </div>
+
+
+       </div>
+       <div class="serv-items card col col-md-3">
+         <a class= "serv-items-a" href="https://www.scnsoft.com/services/software-consulting" >
+           <div class="icon-container  ">
+ <img src="https://svgshare.com/i/Bwy.svg" alt="Icon Img" class="image">
+ <div class="hover-img hover-img-2"></div>
 </div>
 
-              <h2 class="serv-item-title align-self-center">Software Consulting</h2>
+             <h2 class="serv-item-title align-self-center">Software Consulting</h2>
 
-          </a>
-          <div class="serv-item-content">
-            <p>We deliver expert software consulting ranging from concept development, requirements analysis and technology selection to establishing QA strategy and managing security risks</p>
-          </div>
+         </a>
+         <div class="serv-item-content">
+           <p>We deliver expert software consulting ranging from concept development, requirements analysis and technology selection to establishing QA strategy and managing security risks</p>
+         </div>
 
-          <div class="serv-item-footer">
-            <a href="#">See More</a>
-          </div>
-        </div>
-
-  </div>
-  <!-- Grid column -->
-
-  <!-- Grid column -->
-  <div class="grid-col col-lg-4 col-md-6">
-    <!--Card 3-->
-    <div class="serv-items serv-items-3 card col ">
-          <a class= "serv-items-a" href="https://www.scnsoft.com/web-portal-development" >
-            <div class="icon-container  ">
-  <img src="https://svgshare.com/i/Bvg.svg" alt="Icon Img" class="image">
-  <div class="hover-img hover-img-3"></div>
+         <div class="serv-item-footer">
+           <a href="#">See More</a>
+         </div>
+       </div>
+       <div class="serv-items serv-items-3 card col col-md-4">
+         <a class= "serv-items-a" href="https://www.scnsoft.com/web-portal-development" >
+           <div class="icon-container  ">
+ <img src="https://svgshare.com/i/Bvg.svg" alt="Icon Img" class="image">
+ <div class="hover-img hover-img-3"></div>
 </div>
 
-              <h2 class="serv-item-title align-self-center">Web Portals</h2>
+             <h2 class="serv-item-title align-self-center">Web Portals</h2>
 
-          </a>
-          <div class="serv-item-content">
-            <p>Design, development, integration, security audit, maintenance, and other services to drive e-cooperation with customers, partners, vendors, and community members</p>
-          </div>
+         </a>
+         <div class="serv-item-content">
+           <p>Design, development, integration, security audit, maintenance, and other services to drive e-cooperation with customers, partners, vendors, and community members</p>
+         </div>
 
-        <div class="serv-item-footer">
-          <a href="#">See More</a>
-        </div>
-      </div> <!--serv-items card-->
+       <div class="serv-item-footer">
+         <a href="#">See More</a>
+       </div>
+     </div> <!--serv-items card-->
 
-  </div>
-  <!-- Grid column -->
-
-  <!-- Grid row 2-->
-<!--<div class="row text-center mx-auto" style="max-width: 1160px;">-->
-
-  <!-- Grid column -->
-  <div class=" grid-col col-lg-4 col-md-6  mb-lg-0 mb-4">
-    <!--Card 4-->
-    <div class="serv-items card col">
-          <a class= "serv-items-a" href="https://www.scnsoft.com/services/sharepoint-consulting" >
-            <div class="icon-container  ">
-  <img src="https://svgshare.com/i/By_.svg" alt="Icon Img" class="image">
-  <div class="hover-img hover-img-4"></div>
+     </div> <!---end row 1 -->
+       <!---Start row 2 -->
+     <div class="row text-center justify-content-center mx-auto  ">
+       <div class="serv-items card col shadow-none col-md-4">
+         <a class= "serv-items-a" href="https://www.scnsoft.com/services/sharepoint-consulting" >
+           <div class="icon-container  ">
+ <img src="https://svgshare.com/i/By_.svg" alt="Icon Img" class="image">
+ <div class="hover-img hover-img-4"></div>
 </div>
 
-              <h2 class="serv-item-title align-self-center">SharePoint</h2>
+         <h2 class="serv-item-title align-self-center">SharePoint</h2>
 
-          </a>
-          <div class="serv-item-content">
-            <p>We create corporate web portals and intranets to help established enterprises benefit from collaboration and document management</p>
-          </div>
+         </a>
+         <div class="serv-item-content">
+           <p>We create corporate web portals and intranets to help established enterprises benefit from collaboration and document management</p>
+         </div>
 
-          <div class="serv-item-footer">
-            <a href="#">See More</a>
-          </div>
-        </div>
-  </div>
-  <!-- Grid column -->
+         <div class="serv-item-footer">
+           <a href="#">See More</a>
+         </div>
 
-  <!-- Grid column -->
-  <div class="grid-col col-lg-4 col-md-6 mb-md-0 mb-4">
-    <!--Card 5-->
-    <div class="serv-items card col">
-          <a class= "serv-items-a" href="https://www.scnsoft.com/services/salesforce/consulting" >
-            <div class="icon-container  ">
-  <img src="https://svgshare.com/i/Bvh.svg" alt="Icon Img" class="image">
-  <div class="hover-img hover-img-5"></div>
+
+       </div>
+       <div class="serv-items card col col-md-3">
+         <a class= "serv-items-a" href="https://www.scnsoft.com/services/salesforce/consulting" >
+           <div class="icon-container  ">
+ <img src="https://svgshare.com/i/Bvh.svg" alt="Icon Img" class="image">
+ <div class="hover-img hover-img-5"></div>
 </div>
 
-              <h2 class="serv-item-title align-self-center">Salesforce</h2>
+             <h2 class="serv-item-title align-self-center">Salesforce</h2>
 
-          </a>
-          <div class="serv-item-content">
-            <p>We assist you at any stage of the project implementation, from consulting and tweaking the platform to custom solution development and user training</p>
-          </div>
+         </a>
+         <div class="serv-item-content">
+           <p>We assist you at any stage of the project implementation, from consulting and tweaking the platform to custom solution development and user training</p>
+         </div>
 
-          <div class="serv-item-footer">
-            <a href="#">See More</a>
-          </div>
-        </div>
-  </div>
-  <!-- Grid column -->
-
-  <!-- Grid column -->
-  <div class="grid-col col-lg-4 col-md-6">
-    <!--Card 6-->
-    <div class="serv-items serv-items-3 card col">
-          <a class= "serv-items-a" href="https://www.scnsoft.com/services/analytics" >
-            <div class="icon-container  ">
-  <img src="https://svgshare.com/i/ByM.svg" alt="Icon Img" class="image">
-  <div class="hover-img hover-img-6"></div>
+         <div class="serv-item-footer">
+           <a href="#">See More</a>
+         </div>
+       </div>
+       <div class="serv-items serv-items-3 card col col-md-4">
+         <a class= "serv-items-a" href="https://www.scnsoft.com/services/analytics" >
+           <div class="icon-container  ">
+ <img src="https://svgshare.com/i/ByM.svg" alt="Icon Img" class="image">
+ <div class="hover-img hover-img-6"></div>
 </div>
 
-              <h2 class="serv-item-title align-self-center">Data Analytics</h2>
+             <h2 class="serv-item-title align-self-center">Data Analytics</h2>
 
-          </a>
-          <div class="serv-item-content">
-            <p>We cover our clients’ needs with full-cycle analytics services, big data consulting, business intelligence, advanced analytics and data visualization</p>
-          </div>
+         </a>
+         <div class="serv-item-content">
+           <p>We cover our clients’ needs with full-cycle analytics services, big data consulting, business intelligence, advanced analytics and data visualization</p>
+         </div>
 
-        <div class="serv-item-footer">
-          <a href="#">See More</a>
-        </div>
-      </div> <!--serv-items card-->
+       <div class="serv-item-footer">
+         <a href="#">See More</a>
+       </div>
+     </div> <!--serv-items card-->
 
-  </div>
-  <!-- Grid column -->
-</section> <!--End of Service section-->
+     </div> <!---end row 2 -->
 
+   </div> <!--serv-container container-->
+ </section>
 
-
-<!--</div>-->
+</div>
 <!--End of Div maded by matt-->
 
-<div class="decoracion">
-  <p>Texto de separacion 3</p>
+<!--Our track record (CESAR) -->
+
+<div class="container">
+  <p = id="trackRecord">Our track record</p>
+  <div id="trackGrid">
+
+    <div>
+      <img class="ShineIcon" src="https://img.icons8.com/color/96/000000/mind-map.png" alt="">
+    </div>
+
+    <div>
+      <img class="ShineIcon" src="https://img.icons8.com/color/96/000000/scatter-plot.png" alt="">
+    </div>
+
+    <div>
+      <img class="ShineIcon" src="https://img.icons8.com/color/96/000000/combo-chart.png" alt="">
+    </div>
+
+    <div>
+      <img class="ShineIcon" src="https://img.icons8.com/color/96/000000/toolbox.png" alt="">
+    </div>
+
+    <div>
+      <img class="ShineIcon" src="https://img.icons8.com/color/96/000000/empty-hourglass.png" alt="">
+    </div>
+  </div>
+  </div>
+
+<div class="container">
+  <div class="statistics">
+    <div class="orangebox">
+      <div>
+        <h1>3+ experts</h1>
+        <div id="text">
+          <p>…an international team of inspired professionals</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bluebox">
+      <div>
+        <h1>1 year</h1>
+        <div id="text">
+          <p>We are just beginning to do awesome stuff</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="violetbox">
+      <div>
+        <h1>Over 9000</h1>
+        <div id="text">
+          <p>Projects made, full-cycle implementation of business-boosting IT solutions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<!--Testimonials (CESAR) -->
+
+<div class="container">
+  <br>
+  <br>
+  <p = id="trackRecord">Testimonials.</p>
+  <div class="row">
+    <div class="col-md-18">
+      <div class="carousel slide multi-item-carousel" id="theCarousel">
+        <div class="carousel-inner">
+
+          <div class="item active">
+
+            <div class="Testimonialbox">
+              <div>
+                <h1>They are great!</h1>
+                <div id="text">
+                  <p>Pepitou Perez.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="Testimonialbox">
+              <div>
+                <h1>I finally found just what I needed</h1>
+                <div id="text">
+                  <p>Mr noone.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          <div class="item">
+
+            <div class="Testimonialbox">
+              <div>
+                <h1>They build me a great online site for selling my weird stuff</h1>
+                <div id="text">
+                  <p>Mr desu</p>
+                </div>
+              </div>
+            </div>
+                      </div>
+          <div class="item">
+
+            <div class="Testimonialbox">
+              <div>
+                <h1>1 year they said?</h1>
+                <div id="text">
+                  <p>Someone</p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+        </div>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="decoracion">
-  <p>Texto de separacion 4</p>
+<!--div partners juan-->
+
+<div class="partners-div">
+  <div class="title-partners text-center text-primary">
+    <p = id="trackRecord">Partners</p>
+  </div>
+  <div class="container " >
+    <div class="row" id="">
+      <!--there are 6 icons then the separation should be col-md-2 -->
+      <div class="col-md-2" id="partners-sub-div">
+      <img src="https://www.scnsoft.com/partners/microsoft.svg" id="img-partners" alt="">
+      </div>
+      <div class="col-md-2" id="partners-sub-div">
+      <img src="https://www.scnsoft.com/partners/ibm-gold-business-partner.svg" id="img-partners" alt="">
+      </div>
+      <div class="col-md-2" id="partners-sub-div">
+        <img src="https://www.scnsoft.com/partners/oracle.svg"  id="img-partners" alt="">
+      </div>
+      <div class="col-md-2" id="partners-sub-div">
+        <img src="https://www.scnsoft.com/partners/salesforce.svg" id="img-partners" alt="">
+      </div>
+      <div class="col-md-2" id="partners-sub-div">
+        <img src="https://www.scnsoft.com/partners/servicenow.svg" id="img-partners" alt="">
+      </div>
+      <div class="col-md-2" id="partners-sub-div">
+        <img src="https://www.scnsoft.com/partners/magento.svg" id="img-partners" alt="">
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!--end div partners juan-->
+
+<!--Map (Cesar) -->
+<!--
+<div >
+  <iframe class="map" <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.4403758442554!2d-74.0701753422597!3d4.615351999161795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMzYnNTUuMyJOIDc0wrAwNCcwOC43Ilc!5e0!3m2!1ses!2sco!4v1554067661756!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+-->
+
+<div id="div-OurLocation-us">
+<!--one div for the title and another for the rest-->
+
+<div class="container-fluid text-center text-primary" id="titulo-Location">
+  <p = id="trackRecord">Our Location</p>
 </div>
 
-<div class="decoracion">
-  <p>Texto de separacion 5</p>
+
+<div class="" id="mapa-pagina">
+
+<div id="map"></div>
+<script>
+  function initMap(){
+    //map options
+    var options = {
+    zoom:12,
+    center:{lat:4.732389,lng:-74.058333}
+    }
+  //new map
+    var map= new google.maps.Map(document.getElementById('map'), options);
+    //add image to the marker
+  var image ='https://image.flaticon.com/icons/svg/1495/1495184.svg';
+    //add a marker
+    var marker = new google.maps.Marker({
+      position:{lat:4.732389,lng:-74.058333},
+      map: map,
+      icon: {
+        url: image,
+        scaledSize: new google.maps.Size(44, 44)
+      }
+    });
+
+
+
+  }
+</script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7t513oWqhXCvwrPhqgmjuIoZyhdqlDMY&callback=initMap">
+      </script>
+
+<!--end of the maps div-->
+
+<!--div contact us juan -->
+<div id="div-contact-us">
+<!--one div for the title and another for the rest-->
+
+<div class="container-fluid text-center text-primary" id="titulo-contacto">
+  <p = id="trackRecord">Contact Us</p>
 </div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div>
+      <input class="col form-control text-space" type="text" placeholder="Full name">
+      </div>
 
-<footer>
+      <div>
+      <input class="col form-control text-space" type="text" placeholder="Work email">
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+      <div>
+      <input class="col form-control text-space" type="text" placeholder="Company">
+      </div>
+
+      <div>
+      <input class="col form-control text-space" type="text" placeholder="Work Phone">
+      </div>
+    </div>
+  </div>
+  <textarea class="col-md-12 form-control" name="" id="" cols="30" rows="10" placeholder="How can we help you? (please do not leave any private info. here )"></textarea>
+
+</div>
+ <div class="text-center" id="btn-contact-us">
+    <button class="btn btn-success submit-contact-us">
+    SEND REQUEST
+    </button>
+  </div>
+
+  </div>
+
+
+
+</div>
+
+<!--Footer (Juan) -->
+<footer class="footerLetters">
 
 <div class="container">
   <div class="row" style="padding-top:30px;">
-    <div class="col-md-3"><img src="http://reviewsappdeveloper.com/wp-content/uploads/2017/05/scnsoft.png" id="img-logo" /></div>
+    <div class="col-md-3"><img src="img/logo1.png" id="img-logo" /></div>
     <div class="col-md-3"><i class="fas fa-phone" id="iconos-font-awesome" aria-hidden="true"> </i> (+57) 554 254 </div>
       <div class="col-md-3"><i class="fas fa-map-marker-alt" id="iconos-font-awesome" > </i>
          <p>5900 S. Lake Forest Drive Suite 300, McKinney, Dallas,</p>
@@ -310,7 +546,11 @@
 <!--fin primer div-->
 <hr class="separador" />
 
+
+
 <!--Ultimo div del footer-->
+<div class="footerLetters">
+
 <div class="container" style="padding-bottom: 40px;">
   <div class="row">
     <div class="col-md-4">
@@ -343,9 +583,10 @@
 
   </div>
 </div>
+</div>
 <!--Finaliza el ultimo div del footer-->
 </footer>
 
-
   </body>
+
 </html>

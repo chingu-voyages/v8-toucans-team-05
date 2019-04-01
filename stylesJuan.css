@@ -1,42 +1,27 @@
-/*para que todo quede bien pegado a los bordes*/
-* {
-margin:0;
-padding:0;
-box-sizing: border-box;
-font-family: "helvetica", sans-serif;
-color:  #8e8e87;
-/*background-color: #F0F8FF;*/
-
-}
-
-body{
-  padding: 0%;
-  background-color: white;
-}
 /*para todo el header */
 /*div superior */
 #page-wrapper{
   background-color: #F0F8FF;
-  padding-left: 0%;
-  padding-right: 0%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -8vw;
 
   }
 
 
 header{
   position: fixed;
+  margin: 20;
   top: 0;
-  min-height: 75px;
-  padding: 0px 60px;
+  padding: 0;
   display: flex;
+
   justify-content: space-around;
   align-items: center;
   background-color: white;
+  z-index:2;
 
 
-  @media (max-width: 600px) {
-    flex-wrap: wrap;
-  }
 }
 
 header nav ul li a{
@@ -44,8 +29,8 @@ header nav ul li a{
 }
 
 #header-img{
-  width: 50%;
-  margin-left: 10%;
+  width: 40%;
+
 }
 
 #iconos-font-awesome{
@@ -55,8 +40,7 @@ header nav ul li a{
 
 /*que la parte superior no tenga color ni decoracion*/
   ul {
-
-    width: 655px;
+    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -68,26 +52,31 @@ header nav ul li a{
 
 
 /*quitar el punto de una lista - bullet points -*/
+/*el padding de aqui meve los botones */
 li {
       list-style-type: none;
-      padding-top: 30px;
+      padding-top: 50px;
+      padding-right: 10vw;
 
 }
 /*cuadrar que todos los dibujos queden al mismo nivel
 esto lo hago bajando todo al nivel del boton*/
  #nav-header{
-  padding-top: 35px;
+  padding-left: 2vw;
 }
 
 .nav-link {
   list-style: none;
   text-decoration: none;
-  font-size: 1.2em;
+  margin-top: 2vh;
+  margin-left: -10vw;
+  font-size: 2.8em;
 /*  margin-right:0; */
 }
 li #boton-header{
   /*padding-top: -10px;*/
-  margin-bottom: 25px;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
 }
 
 /*hasta aqui va el header*/
@@ -104,6 +93,66 @@ padding-top: 5%;
 /*termina cuerpo de la pagina*/
 
 
+#titulo-Location{
+  margin:30px;
+
+}
+
+/*div contact us*/
+/*margins for the title*/
+#titulo-contacto{
+  margin:30px;
+}
+/*Space between inputs*/
+.text-space{
+  margin:20px 0 30px 0;
+}
+/*margin to the button*/
+#btn-contact-us{
+  margin: 30px;
+}
+/*increase the size of the buton*/
+.submit-contact-us{
+  width:300px;
+  height:50px;
+  font-size:1.4em;
+}
+/*fin div contact us*/
+
+/*start div Partners*/
+.title-partners{
+  margin:30px;
+}
+
+/*the color changing effect*/
+#img-partners{
+filter:grayscale(160%);
+}
+
+#img-partners:hover{
+filter:grayscale(0%);
+}
+
+
+
+/*end of div Partners*/
+
+
+
+/*mapa */
+
+#map{
+  height: 400px;
+  width: 100%;
+}
+#marcador{
+  width: 10%;
+}
+.title-location{
+    margin:30px;
+}
+
+/*fin del mapa*/
 
 /*comienza el footer*/
 footer{
@@ -121,7 +170,7 @@ footer p{
 }
 
 #img-logo{
-  width: 200px;
+  width: 8vw;
   background-color: white;
 }
 
@@ -132,3 +181,12 @@ footer p{
   margin-right: 10%;
 }
 /*termina el footer*/
+
+.footerLetters{
+  font-size: 2rem;
+}
+
+.fab {
+  position: relative;
+  font-size: 2vw;
+}
