@@ -304,7 +304,7 @@
 
 
 /*#############################*/
-/*Responsiveness*/
+/*Responsiveness for landing*/
 /*#############################*/
 
 @media (min-width: 200px) and (max-width: 1024px) {
@@ -328,7 +328,643 @@
     height: 100rem;
   }
 
-  h2{
-    color: red;
-  }
 }
+
+/*#############################*/
+/*Our track record*/
+/*#############################*/
+
+#trackRecord{
+    color: hsla(196, 75%, 41%, 1);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#trackGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*#############################*/
+/*statistics*/
+/*#############################*/
+
+.statistics{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-column-gap: 18vw;
+  margin-top: 50px;
+  margin-left: -12vw;
+}
+
+.orangebox{
+  position: relative;
+  height:  40vh;
+  width: 25vw;
+  font-size: 50px;
+  line-height: 4vh;
+  background-color: hsla(29, 100%, 50%, 0.65);
+}
+
+.orangebox::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 25vw;
+  background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+  content: '';
+  z-index: -1;
+
+}
+
+.orangebox h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 20vw;
+  padding: 10rem 0rem 0rem 10rem;
+}
+
+.orangebox p{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+  text-align: center;
+  width: 25vw;
+}
+
+
+.bluebox{
+  position: relative;
+  height:  40vh;
+  z-index: 1;
+  font-size: 50px;
+  line-height: 4vh;
+}
+
+.bluebox::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 25vw;
+  background: url("http://www.freeimageslive.com/galleries/transtech/electronics/preview/03250022.jpg")no-repeat center center /cover;;
+  content: '';
+  -webkit-filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
+  filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
+  z-index: -1;
+
+}
+
+.bluebox h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 20vw;
+  padding: 10rem 0rem 0rem 10rem;
+
+}
+
+.bluebox p{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+  width: 25vw;
+}
+
+
+.violetbox{
+  position: relative;
+  height:  40vh;
+  width: 25vw;
+  font-size: 50px;
+  line-height: 4vh;
+  background-color: hsla(274, 100%, 50%, 0.59);
+}
+
+.violetbox::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 25vw;
+  background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+  content: '';
+  z-index: -1;
+
+}
+
+.violetbox h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 20vw;
+  text-align: center;
+  padding: 10rem 0rem 0rem 10rem;
+
+}
+
+.violetbox p{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+  width: 25vw;
+}
+
+.ShineIcon {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
+  }
+
+.ShineIcon:hover{
+
+  animation-duration: 1s;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+
+}
+/*#############################*/
+/*Responsiveness for boxes*/
+/*#############################*/
+
+@media (max-width: 1024px) and (min-width: 504px){
+
+
+.statistics{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40vw;
+  }
+
+  .orangebox{
+  position: relative;
+  height:  40vh;
+  width: 45vw;
+  font-size: 50px;
+  line-height: 4vh;
+  background-color: hsla(29, 100%, 50%, 0.65);
+}
+
+.orangebox::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 45vw;
+  background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+  content: '';
+  z-index: -1;
+
+}
+
+.orangebox h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 40vw;
+  padding: 5rem 0rem 0rem 4rem;
+}
+
+.orangebox p{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+  width: 40vw;
+  padding: 1rem 0rem 0rem 4rem;
+}
+
+
+.bluebox{
+  position: relative;
+  height:  40vh;
+  z-index: 1;
+  font-size: 50px;
+  line-height: 4vh;
+}
+
+.bluebox::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 45vw;
+  background: url("http://www.freeimageslive.com/galleries/transtech/electronics/preview/03250022.jpg")no-repeat center center /cover;;
+  content: '';
+  -webkit-filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
+  filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
+  z-index: -1;
+
+}
+
+.bluebox h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 40vw;
+  padding: 5rem 0rem 0rem 4rem;
+}
+
+.bluebox p{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+  width: 40vw;
+  padding: 1rem 0rem 0rem 4rem;
+}
+
+
+.violetbox{
+  position: relative;
+  height:  40vh;
+  width: 45vw;
+  font-size: 50px;
+  line-height: 4vh;
+  background-color: hsla(274, 100%, 50%, 0.59);
+}
+
+.violetbox::before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 45vw;
+  background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+  content: '';
+  z-index: -1;
+
+}
+
+.violetbox h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 40vw;
+  padding: 5rem 0rem 0rem 4rem;
+}
+
+.violetbox p{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+  width: 40vw;
+  padding: 1rem 0rem 0rem 4rem;
+}
+}
+
+@media (max-width: 1500px){
+
+  .statistics{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-column-gap: 12vw;
+    margin-top: 50px;
+    margin-left: -2vw;
+  }
+
+  .orangebox{
+    position: relative;
+    height:  40vh;
+    width: 25vw;
+    font-size: 50px;
+    line-height: 4vh;
+    background-color: hsla(29, 100%, 50%, 0.65);
+  }
+
+  .orangebox::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 25vw;
+    background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+    content: '';
+    z-index: -1;
+
+  }
+
+  .orangebox h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 20vw;
+    padding: 4rem 0rem 0rem 8rem;
+  }
+
+  .orangebox p{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+    width: 25vw;
+  }
+
+
+  .bluebox{
+    position: relative;
+    height:  40vh;
+    z-index: 1;
+    font-size: 50px;
+    line-height: 4vh;
+  }
+
+  .bluebox::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 25vw;
+    background: url("http://www.freeimageslive.com/galleries/transtech/electronics/preview/03250022.jpg")no-repeat center center /cover;;
+    content: '';
+    -webkit-filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
+    filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
+    z-index: -1;
+
+  }
+
+  .bluebox h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 20vw;
+    padding: 4rem 0rem 0rem 8rem;
+
+  }
+
+  .bluebox p{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+    width: 25vw;
+  }
+
+
+  .violetbox{
+    position: relative;
+    height:  40vh;
+    width: 25vw;
+    font-size: 50px;
+    line-height: 4vh;
+    background-color: hsla(274, 100%, 50%, 0.59);
+  }
+
+  .violetbox::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 25vw;
+    background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+    content: '';
+    z-index: -1;
+
+  }
+
+  .violetbox h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 20vw;
+    text-align: center;
+    padding: 4rem 0rem 0rem 6rem;
+
+  }
+
+  .violetbox p{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+    width: 25vw;
+  }
+
+ }
+
+
+/*#############################*/
+/*Testimonials*/
+/*#############################*/
+
+ /*https://codepen.io/mephysto/pen/ZYVKRY*/
+
+ .multi-item-carousel{
+    margin-left: 8vw;
+   .carousel-inner{
+     > .item{
+       transition: 500ms ease-in-out left;
+
+     }
+     .active{
+       &.left{
+         left:-33%;
+       }
+       &.right{
+         left:33%;
+       }
+     }
+     .next{
+       left: 33%;
+     }
+     .prev{
+       left: -33%;
+     }
+     @media all and (transform-3d), (-webkit-transform-3d) {
+       > .item{
+         // use your favourite prefixer here
+         transition: 500ms ease-in-out left;
+         transition: 500ms ease-in-out all;
+         backface-visibility: visible;
+         transform: none!important;
+       }
+     }
+   }
+   .carouse-control{
+     &.left, &.right{
+       background-image: none;
+     }
+   }
+ }
+
+
+ .carouselImg{
+   width: 80vw;
+   height: 25vh;
+
+ }
+
+ .Testimonialbox{
+   position: relative;
+   height:  40vh;
+   width: 45vw;
+   font-size: 50px;
+   line-height: 4vh;
+   background-color: hsla(189, 100%, 40%, 0.59);
+ }
+
+ .Testimonialbox::before{
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   height: 100%;
+   background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+   content: '';
+   z-index: -1;
+
+ }
+
+ .Testimonialbox h1{
+   color: white;
+   font-size: 3rem;
+   font-weight: bold;
+   width: 40vw;
+   text-align: center;
+   padding: 10rem 0rem 0rem 10rem;
+
+ }
+
+ .Testimonialbox p{
+   color: white;
+   font-size: 3rem;
+   font-weight: bold;
+   text-align: center;
+   padding: 10rem 10rem 0rem 0rem;
+   width: 30vw;
+ }
+
+ /*#############################*/
+ /*Testimonials Responsiveness*/
+ /*#############################*/
+
+ @media (max-width: 1024px) and (min-width: 100px){
+
+   .multi-item-carousel{
+      margin-left: 2vw;
+   }
+
+
+   .Testimonialbox{
+     position: relative;
+     height:  40vh;
+     width: 90vw;
+     font-size: 50px;
+     line-height: 4vh;
+     background-color: hsla(189, 100%, 40%, 0.59);
+   }
+
+   .Testimonialbox::before{
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     height: 100%;
+     background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+     content: '';
+     z-index: -1;
+
+   }
+
+   .Testimonialbox h1{
+     color: white;
+     font-size: 3rem;
+     font-weight: bold;
+     width: 60vw;
+     text-align: center;
+     padding: 5rem 0rem 0rem 10rem;
+
+   }
+
+   .Testimonialbox p{
+     color: white;
+     font-size: 3rem;
+     font-weight: bold;
+     padding: 10rem 0rem 0rem 2rem;
+     width: 30vw;
+   }
+ }
+
+@media (max-width: 1500px){
+
+    .multi-item-carousel{
+       margin-left: -4vw;
+    }
+
+
+    .Testimonialbox{
+      position: relative;
+      height:  40vh;
+      width: 90vw;
+      font-size: 50px;
+      line-height: 4vh;
+      background-color: hsla(189, 100%, 40%, 0.59);
+    }
+
+    .Testimonialbox::before{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
+      content: '';
+      z-index: -1;
+
+    }
+
+    .Testimonialbox h1{
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      width: 60vw;
+      text-align: center;
+      padding: 5rem 0rem 0rem 10rem;
+
+    }
+
+    .Testimonialbox p{
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 10rem 0rem 0rem 2rem;
+      width: 30vw;
+    }
+  }
+
+
+
+ /*#############################*/
+ /*Map*/
+ /*#############################*/
+.map{
+   margin-left: 35vw;
+ }
