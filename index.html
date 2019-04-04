@@ -39,9 +39,33 @@
       </div>
     </div>-->
 
+<!--header only visible if the resolution is below 600px-->
+
+
+  <nav class="navbar text-center" id="responsive-div-header">
+
+    <img src="img/logo1.png" id="header-img"  alt="">
+
+    <ul class="navbar-nav"  style="padding-left:25%;">
+      <!--<li><img src="https://es.freelogodesign.org/Content/img/logo-ex-7.png" id="imangen-logo" alt=""></li>-->
+      <li id=""><a class="nav-decoration-list" href="#landingimg" > About</a></li>
+      <li id=""><a class="nav-decoration-list" href="#div-services"> Services </a> </li>
+      <li id=""><a class="nav-decoration-list" href="#div-our-track-record"> Industries</a></li>
+      <li id=""><a class="nav-decoration-list" href="#div-testimonials"> Case Studies</a></li>
+      <li id=""><a class="nav-decoration-list" href="#partners-main-div"> Partners</a></li>
+      <li id=""><a class="nav-decoration-list" href="#div-OurLocation-us"> Our location</a></li>
+      <li ><a class=" btn btn-primary" href="#div-contact-us" id="boton-header"> Contact Us</a></li>
+
+
+      <!--<li><img src="https://es.freelogodesign.org/Content/img/logo-ex-7.png" id="imangen-logo" alt=""></li>-->
+    </ul>
+  </nav>
+
+
+<!--header only visible if the resolution is below 600px-->
 
     <!--div para el header-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="container-div-nav-bar">
       <div class="row">
         <div class="col text-center">
           <div class="col text-center" id="page-wrapper">
@@ -56,13 +80,13 @@
             <nav class="col-md-8" id="nav-bar">
               <ul>
                 <li id="nav-header"><a class="nav-link" href="#" > About</a></li>
-                <li id="nav-header"><a class="nav-link" href="#"> Services </a> </li>
-                <li id="nav-header"><a class="nav-link" href="#"> Industries</a></li>
-                <li id="nav-header"><a class="nav-link" href="#"> Case Studies</a></li>
+                <li id="nav-header"><a class="nav-link" href="#div-services"> Services </a> </li>
+                <li id="nav-header"><a class="nav-link" href="#div-our-track-record"> Industries</a></li>
+                <li id="nav-header"><a class="nav-link" href="#div-testimonials"> Case Studies</a></li>
                 <li id="nav-header"><a class="nav-link" href="#"> Blog</a></li>
-                <li ><a class="nav-link btn btn-primary" href="#" id="boton-header"> Contact Us</a></li>
-                <li id="nav-header"><a class="nav-link" href="#"> English</a></li>
-                <li><button class="btn" id="boton-header"><i class="fa fa-search" aria-hidden="true"></i>
+                <li ><a class="nav-link btn btn-primary" href="#div-contact-us" id="boton-header"> Contact Us</a></li>
+                <li id="nav-header"><a class="nav-link" href="#"> En</a></li>
+                <li><button class="btn " id="boton-header"><i class="fa fa-search" aria-hidden="true"></i>
                     </button></li>
               </ul>
             </nav>
@@ -134,7 +158,7 @@
 </div>
 
 <!--Div maded by matt-->
-<div class="Matt">
+<div class="Matt" id="div-services">
 
   <section class="serv-section mx-auto">
      <div class="serv-container container mx-auto">
@@ -266,8 +290,8 @@
 
 <!--Our track record (CESAR) -->
 
-<div class="container text-center">
-  <h1 class="color text-primary">Our Track Record</h1>
+<div class="container text-center" id="div-our-track-record">
+  <h1 class="color text-primary" id="titulos-encabezados-industries">Industries</h1>
   <div id="trackGrid">
 
     <div>
@@ -320,11 +344,11 @@
       </div>
     </div>
     <!--Testimonials (CESAR) -->
-    <div class="container text-center">
+    <div class="container text-center" id="div-testimonials">
       <br>
       <br>
         <div class="col-md-18">
-            <h1 class="color text-primary">Testimonials</h1>
+            <h1 class="color text-primary" id="titulos-encabezados">Testimonials</h1>
           <div class="carousel slide multi-item-carousel" id="theCarousel">
             <div class="carousel-inner">
 
@@ -388,13 +412,12 @@
 
 <!--div partners juan-->
 
-<div class="partners-div">
-
+<div class="container" id="partners-main-div">
   <div class="title-partners text-center text-primary">
-    <h1 class="color text-primary">Partners</h1>
+    <h1 class="color text-primary" id="titulos-encabezados-partners">Partners</h1>
   </div>
-  <div class="container " >
-    <div class="row" id="">
+  <div class="partners-div" >
+    <div id="">
       <!--there are 6 icons then the separation should be col-md-2 -->
       <div class="col-md-2" id="partners-sub-div">
       <img src="https://www.scnsoft.com/partners/microsoft.svg" id="img-partners" alt="">
@@ -414,10 +437,8 @@
       <div class="col-md-2" id="partners-sub-div">
         <img src="https://www.scnsoft.com/partners/magento.svg" id="img-partners" alt="">
       </div>
-
     </div>
   </div>
-
 </div>
 <!--end div partners juan-->
 
@@ -431,8 +452,8 @@
 <div id="div-OurLocation-us">
 <!--one div for the title and another for the rest-->
 
-<div class="container-fluid text-center text-primary" id="titulo-Location">
-  <h1 class="color text-primary">Our Location</h1>
+<div class="container-fluid text-center text-primary" >
+  <h1 class="color text-primary"id="titulos-encabezados">Our Location</h1>
 </div>
 
 
