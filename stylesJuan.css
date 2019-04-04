@@ -182,11 +182,11 @@ footer p{
 }
 /*termina el footer*/
 
-.footerLetters{
+.footerLetters{  /*Cambia el tamaño de fuente en el footer*/
   font-size: 2rem;
 }
 
-.fab {
+.fab { /*Cambia el tamaño de los iconos en el footer*/
   position: relative;
   font-size: 2vw;
 }

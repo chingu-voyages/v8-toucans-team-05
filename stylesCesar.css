@@ -68,7 +68,7 @@
     border-radius: 50%;
     margin-right: 10vw;
     margin-left: 2vw;
-    margin-top: 1vw;
+    margin-top: 3vw;
 }
 
 .heart {
@@ -147,7 +147,7 @@
     background-color: #b0885f;
     border-radius: 50%;
     margin-left: 8vw;
-    margin-top: 1vw;
+    margin-top: 3vw;
 }
 
 .bank {
@@ -307,7 +307,9 @@
 /*Responsiveness for landing*/
 /*#############################*/
 
-@media (min-width: 200px) and (max-width: 1024px) {
+
+
+@media (min-width: 200px) and (max-width: 1324px) {
 
   #landingimg{
     display: grid;
@@ -316,7 +318,7 @@
     background-image: url(img/landing.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 60rem;
+    height: 55rem;
   }
 
   .grandgrid{
@@ -325,7 +327,151 @@
     flex: 3 0 55vw;
     margin-top: 40vw;
     background-color: black;
-    height: 100rem;
+    height: 80vh;
+  }
+
+  .circleHealth{
+      height: 200px;
+      width: 200px;
+      background-color: #c40b13;
+      border-radius: 50%;
+      margin-right: 10vw;
+      margin-left: 16vw;
+      margin-top: 3vw;
+  }
+
+  .heart {
+   position: initial;
+    height: 100px;
+    width: 100px;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    top: 40px;
+    bottom: 10px;
+
+    }
+
+
+  #healthcaption{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    word-spacing: 0.2px;
+    color: #EEFFEE;
+    top: 5rem;
+    text-align: center;
+  }
+
+  /*#############################*/
+  /*Responsive Banking button and animation*/
+  /*#############################*/
+
+  .circleBank{
+      height: 200px;
+      width: 200px;
+      background-color: #b0885f;
+      border-radius: 50%;
+      margin-left: 14vw;
+      margin-top: 3vw;
+  }
+
+  .bank {
+    height: 100px;
+    width: 100px;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    top: 20px;
+    bottom: 10px;
+    }
+
+
+  #bankcaption{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    word-spacing: 0.2px;
+    color: #EEFFEE;
+    top: 5rem;
+    text-align: center;
+  }
+
+
+  /*#############################*/
+  /*Responsive Retail button and animation*/
+  /*#############################*/
+
+  .circleRetail{
+      height: 200px;
+      width: 200px;
+      background-color: #ffb228;
+      border-radius: 50%;
+      margin-left: 16vw;
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+  }
+  .retail {
+    height: 100px;
+    width: 100px;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    top: 50px;
+    bottom: 10px;
+    }
+
+  #retailcaption{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    word-spacing: 0.2px;
+    color: #EEFFEE;
+    top: 4rem;
+    text-align: center;
+  }
+
+
+  /*#############################*/
+  /*Responsive Research button and animation*/
+  /*#############################*/
+
+  .circleResearch{
+      height: 200px;
+      width: 200px;
+      background-color: #e8ecd6;
+      border-radius: 50%;
+      margin-left: 14vw;
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+  }
+  .research {
+    height: 100px;
+    width: 100px;
+    margin-top: 5.5rem;
+    margin-left: 4.5rem;
+    top: 50px;
+    bottom: 10px;
+    }
+
+
+  #researchcaption{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    word-spacing: 0.2px;
+    color: #EEFFEE;
+    top: 5rem;
+    text-align: center;
   }
 
 }
@@ -334,12 +480,6 @@
 /*Our track record*/
 /*#############################*/
 
-#trackRecord{
-    color: hsla(196, 75%, 41%, 1);
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-}
 
 #trackGrid{
   display: grid;
@@ -494,159 +634,50 @@
   animation-duration: 1s;
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
-
 }
+
 /*#############################*/
 /*Responsiveness for boxes*/
 /*#############################*/
 
-@media (max-width: 1024px) and (min-width: 504px){
-
-
+@media (max-width: 1600px){
 .statistics{
-    display: flex;
-    flex-direction: column;
-    margin-left: 40vw;
-  }
-
-  .orangebox{
-  position: relative;
-  height:  40vh;
-  width: 45vw;
-  font-size: 50px;
-  line-height: 4vh;
-  background-color: hsla(29, 100%, 50%, 0.65);
-}
-
-.orangebox::before{
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100%;
-  width: 45vw;
-  background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
-  content: '';
-  z-index: -1;
-
-}
-
-.orangebox h1{
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  width: 40vw;
-  padding: 5rem 0rem 0rem 4rem;
-}
-
-.orangebox p{
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  padding: 2rem;
-  width: 40vw;
-  padding: 1rem 0rem 0rem 4rem;
-}
-
-
-.bluebox{
-  position: relative;
-  height:  40vh;
-  z-index: 1;
-  font-size: 50px;
-  line-height: 4vh;
-}
-
-.bluebox::before{
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100%;
-  width: 45vw;
-  background: url("http://www.freeimageslive.com/galleries/transtech/electronics/preview/03250022.jpg")no-repeat center center /cover;;
-  content: '';
-  -webkit-filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
-  filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
-  z-index: -1;
-
-}
-
-.bluebox h1{
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  width: 40vw;
-  padding: 5rem 0rem 0rem 4rem;
-}
-
-.bluebox p{
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  padding: 2rem;
-  width: 40vw;
-  padding: 1rem 0rem 0rem 4rem;
-}
-
-
-.violetbox{
-  position: relative;
-  height:  40vh;
-  width: 45vw;
-  font-size: 50px;
-  line-height: 4vh;
-  background-color: hsla(274, 100%, 50%, 0.59);
-}
-
-.violetbox::before{
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100%;
-  width: 45vw;
-  background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
-  content: '';
-  z-index: -1;
-
-}
-
-.violetbox h1{
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  width: 40vw;
-  padding: 5rem 0rem 0rem 4rem;
-}
-
-.violetbox p{
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  padding: 2rem;
-  width: 40vw;
-  padding: 1rem 0rem 0rem 4rem;
+  margin-left: -8vw;
 }
 }
 
 @media (max-width: 1500px){
+.statistics{
+  margin-left: -8vw;
+}
+}
+
+@media (max-width: 1400px){
+.statistics{
+  margin-left: -6vw;
+}
+}
+
+@media (max-width: 1300px){
+.statistics{
+  margin-left: -6vw;
+}
+}
+
+
+@media (max-width: 1300px){
 
   .statistics{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-column-gap: 12vw;
+    grid-template-columns: 200px;
     margin-top: 50px;
-    margin-left: -2vw;
+    margin-left: 12%;
   }
 
   .orangebox{
     position: relative;
     height:  40vh;
-    width: 25vw;
+    width: 65vw;
     font-size: 50px;
     line-height: 4vh;
     background-color: hsla(29, 100%, 50%, 0.65);
@@ -658,7 +689,7 @@
     right: 0;
     left: 0;
     height: 100%;
-    width: 25vw;
+    width: 65vw;
     background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
     content: '';
     z-index: -1;
@@ -669,18 +700,17 @@
     color: white;
     font-size: 3rem;
     font-weight: bold;
-    text-align: center;
-    width: 20vw;
-    padding: 4rem 0rem 0rem 8rem;
+    width: 45vw;
+    padding: 4vw 0vw 0vw 20vw;
   }
 
   .orangebox p{
     color: white;
     font-size: 3rem;
     font-weight: bold;
-    padding: 2rem;
-    text-align: center;
-    width: 25vw;
+    padding: 3.5rem;
+    width: 50vw;
+    padding: 4vw 0vw 0vw 15vw;
   }
 
 
@@ -690,6 +720,7 @@
     z-index: 1;
     font-size: 50px;
     line-height: 4vh;
+    width: 65vw;
   }
 
   .bluebox::before{
@@ -698,7 +729,7 @@
     right: 0;
     left: 0;
     height: 100%;
-    width: 25vw;
+    width: 65vw;
     background: url("http://www.freeimageslive.com/galleries/transtech/electronics/preview/03250022.jpg")no-repeat center center /cover;;
     content: '';
     -webkit-filter: invert(18%) sepia(100%) saturate(600%) hue-rotate(204deg) brightness(50%) contrast(80%);
@@ -712,8 +743,8 @@
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    width: 20vw;
-    padding: 4rem 0rem 0rem 8rem;
+    width: 40vw;
+    padding: 4vw 0vw 0vw 25vw;
 
   }
 
@@ -722,15 +753,15 @@
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    padding: 2rem;
-    width: 25vw;
+    width: 45vw;
+    padding: 4vw 0vw 0vw 20vw;
   }
 
 
   .violetbox{
     position: relative;
     height:  40vh;
-    width: 25vw;
+    width: 65vw;
     font-size: 50px;
     line-height: 4vh;
     background-color: hsla(274, 100%, 50%, 0.59);
@@ -742,7 +773,7 @@
     right: 0;
     left: 0;
     height: 100%;
-    width: 25vw;
+    width: 65vw;
     background: url("http://www.freeimageslive.com/galleries/transtech/informationtechnology/preview/keyboard_buttons.jpg")no-repeat center center /cover;;
     content: '';
     z-index: -1;
@@ -753,9 +784,9 @@
     color: white;
     font-size: 3rem;
     font-weight: bold;
-    width: 20vw;
+    width: 40vw;
     text-align: center;
-    padding: 4rem 0rem 0rem 6rem;
+    padding: 4vw 0vw 0vw 25vw;
 
   }
 
@@ -764,8 +795,8 @@
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    padding: 2rem;
-    width: 25vw;
+    padding: 4vw 0vw 0vw 8vw;
+    width: 60vw;
   }
 
  }
@@ -777,8 +808,12 @@
 
  /*https://codepen.io/mephysto/pen/ZYVKRY*/
 
+ .col-md-18{
+   margin-left: auto;
+ }
+
  .multi-item-carousel{
-    margin-left: 8vw;
+
    .carousel-inner{
      > .item{
        transition: 500ms ease-in-out left;
@@ -819,13 +854,12 @@
  .carouselImg{
    width: 80vw;
    height: 25vh;
-
  }
 
  .Testimonialbox{
    position: relative;
    height:  40vh;
-   width: 45vw;
+   width: 90vw;
    font-size: 50px;
    line-height: 4vh;
    background-color: hsla(189, 100%, 40%, 0.59);
@@ -847,9 +881,9 @@
    color: white;
    font-size: 3rem;
    font-weight: bold;
-   width: 40vw;
+   width: 60vw;
    text-align: center;
-   padding: 10rem 0rem 0rem 10rem;
+   padding: 10rem 0rem 0rem 1rem;
 
  }
 
@@ -859,19 +893,19 @@
    font-weight: bold;
    text-align: center;
    padding: 10rem 10rem 0rem 0rem;
-   width: 30vw;
+   width: 40vw;
  }
 
  /*#############################*/
  /*Testimonials Responsiveness*/
  /*#############################*/
 
- @media (max-width: 1024px) and (min-width: 100px){
 
-   .multi-item-carousel{
-      margin-left: 2vw;
-   }
+@media (max-width: 1300px){
 
+  .col-md-18{
+    margin-left: 1%;
+  }
 
    .Testimonialbox{
      position: relative;
@@ -898,9 +932,9 @@
      color: white;
      font-size: 3rem;
      font-weight: bold;
-     width: 60vw;
+     width: 80vw;
      text-align: center;
-     padding: 5rem 0rem 0rem 10rem;
+     padding: 5rem 0rem 0rem -14rem;
 
    }
 
@@ -913,17 +947,17 @@
    }
  }
 
-@media (max-width: 1500px){
+ @media (max-width: 1000px){
 
-    .multi-item-carousel{
-       margin-left: -4vw;
-    }
-
+   .col-md-18{
+     margin-left: -1%;
+     width: 80vw;
+   }
 
     .Testimonialbox{
       position: relative;
       height:  40vh;
-      width: 90vw;
+      width: 100vw;
       font-size: 50px;
       line-height: 4vh;
       background-color: hsla(189, 100%, 40%, 0.59);
@@ -945,9 +979,9 @@
       color: white;
       font-size: 3rem;
       font-weight: bold;
-      width: 60vw;
+      width: 80vw;
       text-align: center;
-      padding: 5rem 0rem 0rem 10rem;
+      padding: 5rem 0rem 0rem -14rem;
 
     }
 
@@ -959,6 +993,7 @@
       width: 30vw;
     }
   }
+
 
 
 
