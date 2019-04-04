@@ -39,9 +39,33 @@
       </div>
     </div>-->
 
+<!--header only visible if the resolution is below 600px-->
+
+
+  <nav class="navbar text-center" id="responsive-div-header">
+
+    <img src="img/logo1.png" id="header-img"  alt="">
+
+    <ul class="navbar-nav"  style="padding-left:25%;">
+      <!--<li><img src="https://es.freelogodesign.org/Content/img/logo-ex-7.png" id="imangen-logo" alt=""></li>-->
+      <li id=""><a class="nav-decoration-list" href="#landingimg" > About</a></li>
+      <li id=""><a class="nav-decoration-list" href="#div-services"> Services </a> </li>
+      <li id=""><a class="nav-decoration-list" href="#div-our-track-record"> Industries</a></li>
+      <li id=""><a class="nav-decoration-list" href="#div-testimonials"> Case Studies</a></li>
+      <li id=""><a class="nav-decoration-list" href="#partners-main-div"> Partners</a></li>
+      <li id=""><a class="nav-decoration-list" href="#div-OurLocation-us"> Our location</a></li>
+      <li ><a class=" btn btn-primary" href="#div-contact-us" id="boton-header"> Contact Us</a></li>
+
+
+      <!--<li><img src="https://es.freelogodesign.org/Content/img/logo-ex-7.png" id="imangen-logo" alt=""></li>-->
+    </ul>
+  </nav>
+
+
+<!--header only visible if the resolution is below 600px-->
 
     <!--div para el header-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="container-div-nav-bar">
       <div class="row">
         <div class="col text-center">
           <div class="col text-center" id="page-wrapper">
@@ -56,13 +80,13 @@
             <nav class="col-md-8" id="nav-bar">
               <ul>
                 <li id="nav-header"><a class="nav-link" href="#" > About</a></li>
-                <li id="nav-header"><a class="nav-link" href="#"> Services </a> </li>
-                <li id="nav-header"><a class="nav-link" href="#"> Industries</a></li>
-                <li id="nav-header"><a class="nav-link" href="#"> Case Studies</a></li>
+                <li id="nav-header"><a class="nav-link" href="#div-services"> Services </a> </li>
+                <li id="nav-header"><a class="nav-link" href="#div-our-track-record"> Industries</a></li>
+                <li id="nav-header"><a class="nav-link" href="#div-testimonials"> Case Studies</a></li>
                 <li id="nav-header"><a class="nav-link" href="#"> Blog</a></li>
-                <li ><a class="nav-link btn btn-primary" href="#" id="boton-header"> Contact Us</a></li>
-                <li id="nav-header"><a class="nav-link" href="#"> English</a></li>
-                <li><button class="btn" id="boton-header"><i class="fa fa-search" aria-hidden="true"></i>
+                <li ><a class="nav-link btn btn-primary" href="#div-contact-us" id="boton-header"> Contact Us</a></li>
+                <li id="nav-header"><a class="nav-link" href="#"> En</a></li>
+                <li><button class="btn " id="boton-header"><i class="fa fa-search" aria-hidden="true"></i>
                     </button></li>
               </ul>
             </nav>
@@ -134,142 +158,140 @@
 </div>
 
 <!--Div maded by matt-->
-<div class="Matt">
+<div class="Matt" id="div-services">
 
-<section class="serv-section mx-auto">
-   <div class="serv-container container mx-auto">
-     <h1 class="color text-primary text-center">Partners</h1>
-     <div class="row text-center justify-content-center mx-auto  ">
-       <div class="serv-items card col shadow-none col-md-4 ">
-         <a class= "serv-items-a" href="https://www.scnsoft.com/services/custom-application-development" >
-           <div class="icon-container  ">
- <img src="https://svgshare.com/i/ByL.svg" alt="Icon Img" class="image">
- <div class="hover-img hover-img-1"></div>
-</div>
+  <section class="serv-section mx-auto">
+     <div class="serv-container container mx-auto">
+       <div class="row text-center justify-content-center mx-auto  ">
+         <div class="serv-items card col shadow-none ">
+           <a class= "serv-items-a" href="https://www.scnsoft.com/services/custom-application-development" >
+             <div class="icon-container  ">
+   <img src="https://svgshare.com/i/ByL.svg" alt="Icon Img" class="image">
+   <div class="hover-img hover-img-1"></div>
+ </div>
+
+               <h2 class="serv-item-title align-self-center">Custom Software Development</h2>
+
+           </a>
+           <div class="serv-item-content">
+             <p>We offer full-cycle development services for web, mobile and desktop that have already brought value to Walmart, eBay and Viber</p>
+           </div>
+
+           <div class="serv-item-footer">
+             <a href="#">See More</a>
+           </div>
 
 
-             <h2 class="serv-item-title align-self-center">Custom Software Development</h2>
-
-         </a>
-         <div class="serv-item-content">
-           <p>We offer full-cycle development services for web, mobile and desktop that have already brought value to Walmart, eBay and Viber</p>
          </div>
+         <div class="serv-items card col">
+           <a class= "serv-items-a" href="https://www.scnsoft.com/services/software-consulting" >
+             <div class="icon-container  ">
+   <img src="https://svgshare.com/i/Bwy.svg" alt="Icon Img" class="image">
+   <div class="hover-img hover-img-2"></div>
+ </div>
+
+               <h2 class="serv-item-title align-self-center">Software Consulting</h2>
+
+           </a>
+           <div class="serv-item-content">
+             <p>We deliver expert software consulting ranging from concept development, requirements analysis and technology selection to establishing QA strategy and managing security risks</p>
+           </div>
+
+           <div class="serv-item-footer">
+             <a href="#">See More</a>
+           </div>
+         </div>
+         <div class="serv-items serv-items-3 card col">
+           <a class= "serv-items-a" href="https://www.scnsoft.com/web-portal-development" >
+             <div class="icon-container  ">
+   <img src="https://svgshare.com/i/Bvg.svg" alt="Icon Img" class="image">
+   <div class="hover-img hover-img-3"></div>
+ </div>
+
+               <h2 class="serv-item-title align-self-center">Web Portals</h2>
+
+           </a>
+           <div class="serv-item-content">
+             <p>Design, development, integration, security audit, maintenance, and other services to drive e-cooperation with customers, partners, vendors, and community members</p>
+           </div>
 
          <div class="serv-item-footer">
            <a href="#">See More</a>
          </div>
+       </div> <!--serv-items card-->
+
+       </div> <!---end row 1 -->
+         <!---Start row 2 -->
+       <div class="row text-center justify-content-center mx-auto  ">
+         <div class="serv-items card col shadow-none ">
+           <a class= "serv-items-a" href="https://www.scnsoft.com/services/sharepoint-consulting" >
+             <div class="icon-container  ">
+   <img src="https://svgshare.com/i/By_.svg" alt="Icon Img" class="image">
+   <div class="hover-img hover-img-4"></div>
+ </div>
+
+               <h2 class="serv-item-title align-self-center">SharePoint</h2>
+
+           </a>
+           <div class="serv-item-content">
+             <p>We create corporate web portals and intranets to help established enterprises benefit from collaboration and document management</p>
+           </div>
+
+           <div class="serv-item-footer">
+             <a href="#">See More</a>
+           </div>
 
 
-       </div>
-       <div class="serv-items card col col-md-3">
-         <a class= "serv-items-a" href="https://www.scnsoft.com/services/software-consulting" >
-           <div class="icon-container  ">
- <img src="https://svgshare.com/i/Bwy.svg" alt="Icon Img" class="image">
- <div class="hover-img hover-img-2"></div>
-</div>
-
-             <h2 class="serv-item-title align-self-center">Software Consulting</h2>
-
-         </a>
-         <div class="serv-item-content">
-           <p>We deliver expert software consulting ranging from concept development, requirements analysis and technology selection to establishing QA strategy and managing security risks</p>
          </div>
+         <div class="serv-items card col">
+           <a class= "serv-items-a" href="https://www.scnsoft.com/services/salesforce/consulting" >
+             <div class="icon-container  ">
+   <img src="https://svgshare.com/i/Bvh.svg" alt="Icon Img" class="image">
+   <div class="hover-img hover-img-5"></div>
+ </div>
+
+               <h2 class="serv-item-title align-self-center">Salesforce</h2>
+
+           </a>
+           <div class="serv-item-content">
+             <p>We assist you at any stage of the project implementation, from consulting and tweaking the platform to custom solution development and user training</p>
+           </div>
+
+           <div class="serv-item-footer">
+             <a href="#">See More</a>
+           </div>
+         </div>
+         <div class="serv-items serv-items-3 card col">
+           <a class= "serv-items-a" href="https://www.scnsoft.com/services/analytics" >
+             <div class="icon-container  ">
+   <img src="https://svgshare.com/i/ByM.svg" alt="Icon Img" class="image">
+   <div class="hover-img hover-img-6"></div>
+ </div>
+
+               <h2 class="serv-item-title align-self-center">Data Analytics</h2>
+
+           </a>
+           <div class="serv-item-content">
+             <p>We cover our clients’ needs with full-cycle analytics services, big data consulting, business intelligence, advanced analytics and data visualization</p>
+           </div>
 
          <div class="serv-item-footer">
            <a href="#">See More</a>
          </div>
-       </div>
-       <div class="serv-items serv-items-3 card col col-md-4">
-         <a class= "serv-items-a" href="https://www.scnsoft.com/web-portal-development" >
-           <div class="icon-container  ">
- <img src="https://svgshare.com/i/Bvg.svg" alt="Icon Img" class="image">
- <div class="hover-img hover-img-3"></div>
-</div>
+       </div> <!--serv-items card-->
 
-             <h2 class="serv-item-title align-self-center">Web Portals</h2>
+       </div> <!---end row 2 -->
 
-         </a>
-         <div class="serv-item-content">
-           <p>Design, development, integration, security audit, maintenance, and other services to drive e-cooperation with customers, partners, vendors, and community members</p>
-         </div>
-
-       <div class="serv-item-footer">
-         <a href="#">See More</a>
-       </div>
-     </div> <!--serv-items card-->
-
-     </div> <!---end row 1 -->
-       <!---Start row 2 -->
-     <div class="row text-center justify-content-center mx-auto  ">
-       <div class="serv-items card col shadow-none col-md-4">
-
-           <div class="icon-container  ">
- <img src="https://svgshare.com/i/By_.svg" alt="Icon Img" class="image">
- <div class="hover-img hover-img-4"></div>
-</div>
-
-         <h2 class="serv-item-title align-self-center">SharePoint</h2>
-
-         </a>
-         <div class="serv-item-content">
-           <p>We create corporate web portals and intranets to help established enterprises benefit from collaboration and document management</p>
-         </div>
-
-         <div class="serv-item-footer">
-           <a href="#">See More</a>
-         </div>
-
-
-       </div>
-       <div class="serv-items card col col-md-3">
-         <a class= "serv-items-a" href="https://www.scnsoft.com/services/salesforce/consulting" >
-           <div class="icon-container  ">
- <img src="https://svgshare.com/i/Bvh.svg" alt="Icon Img" class="image">
- <div class="hover-img hover-img-5"></div>
-</div>
-
-             <h2 class="serv-item-title align-self-center">Salesforce</h2>
-
-         </a>
-         <div class="serv-item-content">
-           <p>We assist you at any stage of the project implementation, from consulting and tweaking the platform to custom solution development and user training</p>
-         </div>
-
-         <div class="serv-item-footer">
-           <a href="#">See More</a>
-         </div>
-       </div>
-       <div class="serv-items serv-items-3 card col col-md-4">
-         <a class= "serv-items-a" href="https://www.scnsoft.com/services/analytics" >
-           <div class="icon-container  ">
- <img src="https://svgshare.com/i/ByM.svg" alt="Icon Img" class="image">
- <div class="hover-img hover-img-6"></div>
-</div>
-
-             <h2 class="serv-item-title align-self-center">Data Analytics</h2>
-
-         </a>
-         <div class="serv-item-content">
-           <p>We cover our clients’ needs with full-cycle analytics services, big data consulting, business intelligence, advanced analytics and data visualization</p>
-         </div>
-
-       <div class="serv-item-footer">
-         <a href="#">See More</a>
-       </div>
-     </div> <!--serv-items card-->
-
-     </div> <!---end row 2 -->
-
-   </div> <!--serv-container container-->
- </section>
+     </div> <!--serv-container container-->
+   </section>
 
 </div>
 <!--End of Div maded by matt-->
 
 <!--Our track record (CESAR) -->
 
-<div class="container text-center">
-  <h1 class="color text-primary">Our Track Record</h1>
+<div class="container text-center" id="div-our-track-record">
+  <h1 class="color text-primary" id="titulos-encabezados-industries">Industries</h1>
   <div id="trackGrid">
 
     <div>
@@ -322,11 +344,11 @@
       </div>
     </div>
     <!--Testimonials (CESAR) -->
-    <div class="container text-center">
+    <div class="container text-center" id="div-testimonials">
       <br>
       <br>
         <div class="col-md-18">
-            <h1 class="color text-primary">Testimonials</h1>
+            <h1 class="color text-primary" id="titulos-encabezados">Testimonials</h1>
           <div class="carousel slide multi-item-carousel" id="theCarousel">
             <div class="carousel-inner">
 
@@ -390,13 +412,12 @@
 
 <!--div partners juan-->
 
-<div class="partners-div">
-
+<div class="container" id="partners-main-div">
   <div class="title-partners text-center text-primary">
-    <h1 class="color text-primary">Partners</h1>
+    <h1 class="color text-primary" id="titulos-encabezados-partners">Partners</h1>
   </div>
-  <div class="container " >
-    <div class="row" id="">
+  <div class="partners-div" >
+    <div id="">
       <!--there are 6 icons then the separation should be col-md-2 -->
       <div class="col-md-2" id="partners-sub-div">
       <img src="https://www.scnsoft.com/partners/microsoft.svg" id="img-partners" alt="">
@@ -416,10 +437,8 @@
       <div class="col-md-2" id="partners-sub-div">
         <img src="https://www.scnsoft.com/partners/magento.svg" id="img-partners" alt="">
       </div>
-
     </div>
   </div>
-
 </div>
 <!--end div partners juan-->
 
@@ -433,8 +452,8 @@
 <div id="div-OurLocation-us">
 <!--one div for the title and another for the rest-->
 
-<div class="container-fluid text-center text-primary" id="titulo-Location">
-  <h1 class="color text-primary">Our Location</h1>
+<div class="container-fluid text-center text-primary" >
+  <h1 class="color text-primary"id="titulos-encabezados">Our Location</h1>
 </div>
 
 

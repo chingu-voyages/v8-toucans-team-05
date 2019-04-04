@@ -45,7 +45,7 @@ header nav ul li a{
     flex-direction: row;
     justify-content: space-around;
 
-    @media (max-width: 950px) {
+    @media (max-width: 550px) {
       flex-direction: column;
     }
   }
@@ -75,9 +75,44 @@ esto lo hago bajando todo al nivel del boton*/
 }
 li #boton-header{
   /*padding-top: -10px;*/
-  margin-top: 4vh;
+  margin-top: 2vh;
   margin-bottom: 2vh;
+  font-size: 2.8em;
+  border-radius: 5px;
 }
+/*responsive design navbar*/
+.nav-decoration-list{
+  font-size: 2.8em;
+}
+
+
+/*the responsive navbar is displayed at a given resolution*/
+@media(max-width:968px){
+  #container-div-nav-bar{display:none}
+
+  #header-img{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* the responsive navbar is hidden at normal resolution*/
+@media(min-width:968px){
+  #responsive-div-header{display:none}
+
+
+  #header-img{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*ends responsive design navbar*/
+
 
 /*hasta aqui va el header*/
 
@@ -92,11 +127,12 @@ padding-top: 5%;
 }
 /*termina cuerpo de la pagina*/
 
-
+/*lo quite para dejar todo en un mismo div*/
+/*
 #titulo-Location{
   margin:30px;
 
-}
+}*/
 
 /*div contact us*/
 /*margins for the title*/
@@ -120,9 +156,10 @@ padding-top: 5%;
 /*fin div contact us*/
 
 /*start div Partners*/
-.title-partners{
+
+/*.title-partners{
   margin:30px;
-}
+}*/
 
 /*the color changing effect*/
 #img-partners{
@@ -172,6 +209,7 @@ footer p{
 #img-logo{
   width: 8vw;
   background-color: white;
+
 }
 
 .separador{
@@ -189,4 +227,99 @@ footer p{
 .fab { /*Cambia el tamaño de los iconos en el footer*/
   position: relative;
   font-size: 2vw;
+}
+
+
+
+/*titulo testimonials, our track record */
+#titulos-encabezados-industries{
+  margin-bottom: 60px;
+}
+#titulos-encabezados-partners{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#titulos-encabezados{
+  margin-bottom: 30px;
+}
+/*ends titulo testimonials */
+
+@media (min-width: 1324px) and (max-width: 1624px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+
+}
+
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1324px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+
+}
+
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+
+}
+
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+
+}
+
+@media (min-width: 10px) and (max-width: 800px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+}
+
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+
+}
+
+@media (max-width: 400px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+}
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
 }
