@@ -90,26 +90,11 @@ li #boton-header{
 @media(max-width:968px){
   #container-div-nav-bar{display:none}
 
-  #header-img{
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 }
 
 /* the responsive navbar is hidden at normal resolution*/
 @media(min-width:968px){
   #responsive-div-header{display:none}
-
-
-  #header-img{
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 /*ends responsive design navbar*/
 
@@ -244,6 +229,7 @@ footer p{
   margin-bottom: 30px;
 }
 /*ends titulo testimonials */
+
 
 @media (min-width: 1324px) and (max-width: 1624px) {
 
